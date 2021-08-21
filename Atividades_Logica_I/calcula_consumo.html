@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+
+
+
+var caminhoComGasolina = 480;
+var tanqueCarro = 40;
+var consumoDeGasolina = caminhoComGasolina / tanqueCarro;
+
+document.write("O consumo de gasolina durante o percurso foi de " + consumoDeGasolina + " Km/L.<br>")
+
+var caminhoComAlcool = 300;
+var consumoDeAlcool = caminhoComAlcool / tanqueCarro;
+
+document.write("O consumo de álcool durante o percurso foi de " + consumoDeAlcool + " Km/L. <br>")
+
+document.write("<br>")
+
+var valorAlcool = 4;
+var valorGasolina = 5;
+
+
+document.write("O litro de álcool custa R$ " + valorAlcool + " reais e o preço do  litro de gasolina custa R$ " + valorGasolina + " reais.<br>");
+
+var valortotalGas = tanqueCarro * valorGasolina;
+var valorTotalAlc = tanqueCarro * valorAlcool;
+
+
+document.write("<br>O valor de 40L de Gasolina é de R$ " + valortotalGas + "<br>");
+document.write("O valor de 40L de Alcool é de R$ " + valorTotalAlc + "<br>");
+
+
+document.write("<br>O carro com 40L de gasolina roda 480Km, ou seja, 180km a mais do que o carro com álcool que roda 300km. <br> Para o carro com álcool rodar os mesmos 480km terá que abastecer o valor total de R$ " , valorTotalAlc + 96, " reais.<br>");
+
+
+document.write("<br>É MELHOR ABASTECER EM GASOLINA!! \u2763");
+
+</script>
+
+
+
+
+
+
+
+
+

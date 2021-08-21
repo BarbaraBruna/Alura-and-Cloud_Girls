@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h3>CRIAR FUNÇÃO</h3>
+
+
+
+<script> 
+
+	function pulaLinha() { /*ESSA FUNÇÃO NÃO RECEBE PARÂMETRO*/
+
+		document.write("<br>".repeat(3)); 
+	 
+}
+
+function mostra (frase) { /*ESSA FUNÇÃO RECEBE PARÂMETRO*/
+
+	document.write(frase);
+
+}
+
+var ano = 2016;
+
+mostra(); /*QUEM MOSTRA, MOSTRA ALGO...NAO PODE FICAR VAZIA*/
+ 
+mostra("Antônio tem " + (ano - 1977) + " anos.");
+
+pulaLinha(); /*pra funcao em bloco ser executada preciso abrir e fechar parenteses sempre*/
+
+mostra("Marcela tem " + (ano - 1989) + " anos.");
+
+pulaLinha(); /*pra funcao em bloco ser executada preciso abrir e fechar parenteses sempre*/
+
+mostra("Fernando tem " + (ano - 1991) + " anos.");
+
+</script>

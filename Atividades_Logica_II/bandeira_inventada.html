@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <canvas width="600" height="400"></canvas>
+
+  <script>
+    var tela = document.querySelector("canvas"); // comando tela de "pintura"
+
+    var pincel = tela.getContext("2d"); // comando para chamar o pincel em um contexto de bidimensional
+
+    pincel.fillStyle = "gray"; // estilo de preenchimento do pincel, tipo cariavel, atribiu valor, não é uma funcão
+
+    pincel.fillRect(0, 0, 600, 300); // comando pincel, preencha me retângulo!! coordenada x,y 600 de largura e 400 de altura
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 0, 600, 30);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 50, 600, 30);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 100, 600, 30);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 150, 600, 30);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 200, 600, 30);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 250, 600, 30);
+
+    pincel.fillStyle = "red";
+    pincel.fillRect(0, 300, 600, 30);
+
+    pincel.fillStyle = "blue";
+
+    pincel.fillRect(0, 0, 300, 180);
+
+    pincel.fillStyle = "white";
+
+    pincel.beginPath();
+
+    pincel.moveTo(20, 20);
+    pincel.lineTo(75, 15);
+    pincel.lineTo(25, 45);
+    pincel.lineTo(45, 5);
+    pincel.lineTo(65, 45);
+
+    pincel.fill();
+
+    //pincel.beginPath(); desenhar
+    //pincel.arc(40, 40, 8, 0, 2 * 3.14); // função circulo eixo X,Y, raio, angulo inicial e angulo final em radianos
+    //pincel.fill(); // preenchimento
+  </script>
+</html>

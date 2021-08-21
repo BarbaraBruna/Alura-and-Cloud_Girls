@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random() * 10);
+console.log(numeroPensado);
+
+var palpite = parseInt(prompt("Digite seu palpite!!!")); /*o parseInt converte texto de num digitado no teclado em núm.Promp é a entrada de dados pelo usuário,*/
+
+if(palpite == numeroPensado) {
+
+	document.write("Acertou mizeravi!");
+}
+
+if(palpite != numeroPensado) {
+
+	document.write("Tente novamente!")
+}
+
+
+
+
+
+
+</script>

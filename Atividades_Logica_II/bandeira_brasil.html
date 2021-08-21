@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <canvas width="600" height="400"></canvas>
+
+  <script>
+    var tela = document.querySelector("canvas"); // preciso pegar o canvas e trazer para o mundo JS > comando tela de "pintura"
+
+    var pincel = tela.getContext("2d"); // comando para chamar o pincel em um contexto de bidimensional
+
+    pincel.fillStyle = "green"; // estilo de preenchimento do pincel, tipo cariavel, atribiu valor, não é uma funcão
+
+    pincel.fillRect(0, 0, 600, 400); // comando pincel, preencha me retângulo!! coordenada x,y 600 de largura e 400 de altura
+
+    pincel.fillStyle = "yellow";
+
+    pincel.beginPath();
+
+    pincel.moveTo(300, 20);
+    pincel.lineTo(20, 200);
+    pincel.lineTo(300, 380);
+    pincel.lineTo(580, 200);
+    pincel.fill();
+
+    pincel.fillStyle = "blue";
+
+    pincel.beginPath();
+    pincel.arc(300, 200, 100, 0, 2 * 3.14); // função circulo eixo X,Y, raio, angulo inicial e angulo final em radianos
+    pincel.fill(); // preenchimento
+  </script>
+</html>

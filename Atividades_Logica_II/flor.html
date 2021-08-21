@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <canvas width="600" height="400"></canvas>
+
+  <script>
+    var tela = document.querySelector("canvas"); // preciso pegar o canvas e trazer para o mundo JS > comando tela de "pintura"
+
+    var pincel = tela.getContext("2d"); // comando para chamar o pincel em um contexto de bidimensional
+
+    pincel.fillStyle = "green"; // estilo de preenchimento do pincel, tipo cariavel, atribiu valor, não é uma funcão
+
+    pincel.fillRect(0, 0, 600, 400);
+    pincel.fill();
+
+    function desenhaBola(x, y, raio, cor) {
+      pincel.fillStyle = cor;
+      pincel.beginPath();
+      pincel.arc(x, y, raio, 0, 2 * Math.PI);
+      pincel.fill();
+    }
+
+    function desenhaFlor(x, y) {
+      desenhaBola(x, y + 20, 10, "blue");
+      desenhaBola(x, y, 10, "red");
+      desenhaBola(x, y - 20, 10, "yellow");
+      desenhaBola(x - 20, y, 10, "orange");
+      desenhaBola(x + 20, y, 10, "black");
+    }
+
+    desenhaFlor(300, 200);
+  </script>
+</html>

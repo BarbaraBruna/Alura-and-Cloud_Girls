@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <html>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+      var context;
+      var x = 20;
+      var y = 20;
+      var dx = 1;
+      var dy = 3;
+
+      function init() {
+        context = Canvas.getContext("2d");
+        setInterval(draw, 10);
+      }
+
+      function draw() {
+        context.clearRect(0, 0, 600, 400);
+        context.beginPath();
+        context.fillStyle = "red";
+        // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
+        context.arc(x, y, 20, 0, 3.14 * 2);
+        context.closePath();
+        context.fill();
+
+        if (x < 20 || x > 800) dx = -dx;
+        if (y < 0 || y > 400) dy = -dy;
+        x += dx;
+        y += dy;
+      }
+    </script>
+    <body onLoad="init();">
+      <canvas id="Canvas" width="600" height="400"> </canvas>
+    </body>
+  </html>
+</html>
