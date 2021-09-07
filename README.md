@@ -1,4 +1,4 @@
-# Alura-Cloud-Girls
+# Alura - Oracle One
 
 Repositório criado a partir do meu aprendizado nos cursos de Lógica I e II da Oracle One, plataforma Alura, pela mentoria Cloud Girls.
 
